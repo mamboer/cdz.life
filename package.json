@@ -1,0 +1,21 @@
+{
+  "name": "cdz-life",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@nuxt-themes/alpine": "^1.6.1",
+    "@nuxt/devtools": "^0.6.3",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxtjs/plausible": "^0.2.1",
+    "@types/node": "^20.3.1",
+    "eslint": "^8.43.0",
+    "nuxt": "^3.6.0"
+  }
+}
