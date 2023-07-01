@@ -1,22 +1,11 @@
 <template>
   <div class="container mx-auto py-12">
-    <div class="flex flex-col items-center">
-      <Logo />
-      <h1 class="title">
-        nuxt-i18n-blog
-      </h1>
-      <div class="links">
-        <nuxt-link to="/blog" class="btn btn-teal mr-4">
-          Blog
-        </nuxt-link>
-        <a
-          href="https://github.com/alvarosaburido/nuxt-i18n-blog"
-          class="btn btn-indigo"
-        >
-          Github</a
-        >
-      </div>
-    </div>
+    <HomeHero
+      :title="$t('hero.title')"
+      :subtitle="$t('hero.subtitle')"
+      :desc="$t('hero.desc')"
+      image="https://unocss.dev/logo.svg"
+    />
   </div>
 </template>
 
@@ -38,26 +27,4 @@ export default {}
   align-items: center;
   text-align: center;
 } */
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
